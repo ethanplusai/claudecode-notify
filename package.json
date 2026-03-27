@@ -23,6 +23,9 @@
     "developer-tools"
   ],
   "author": "Ethan Rogers <contact@ethanrogers.us>",
+  "scripts": {
+    "test": "node --test test/*.test.js"
+  },
   "license": "MIT",
   "repository": {
     "type": "git",
