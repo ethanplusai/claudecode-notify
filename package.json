@@ -1,0 +1,31 @@
+{
+  "name": "claude-notify",
+  "version": "1.0.0",
+  "description": "Native macOS notifications when Claude Code needs you. Click to jump to the right terminal.",
+  "bin": {
+    "claude-notify": "./bin/cli.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    "bin/",
+    "src/",
+    "LICENSE",
+    "README.md"
+  ],
+  "keywords": [
+    "claude",
+    "claude-code",
+    "notifications",
+    "macos",
+    "terminal",
+    "developer-tools"
+  ],
+  "author": "Ethan Rogers <contact@ethanrogers.us>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ethanplusai/claude-notify"
+  }
+}
