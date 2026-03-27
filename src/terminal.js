@@ -38,15 +38,6 @@ tell application "iTerm2"
         if name of s contains "${escaped}" or name of s contains "${shortenPath(cwd)}" then
           select t
           set found to true
-          -- Flash the session with a brief highlight
-          tell s
-            set bg to background color
-            set background color to {16384, 32768, 65535}
-          end tell
-          delay 0.2
-          tell s
-            set background color to bg
-          end tell
           exit repeat
         end if
       end repeat
@@ -70,12 +61,6 @@ tell application "Terminal"
         set selected tab of w to t
         set index of w to 1
         set found to true
-        -- Pulse the window: briefly resize then restore
-        set origBounds to bounds of w
-        set {x1, y1, x2, y2} to origBounds
-        set bounds of w to {x1 + 10, y1 + 10, x2 - 10, y2 - 10}
-        delay 0.1
-        set bounds of w to origBounds
         exit repeat
       end if
     end repeat
